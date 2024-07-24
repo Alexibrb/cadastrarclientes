@@ -1,3 +1,5 @@
+import os
+os.system('pip install streamlit-option-menu')
 from funcoes import *
 from paginas import *
 
