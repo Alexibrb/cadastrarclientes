@@ -1,5 +1,5 @@
 import os
-os.system('pip install streamlit-option-menu')
+os.system('pip install -r requirements.txt')
 from funcoes import *
 from paginas import *
 
