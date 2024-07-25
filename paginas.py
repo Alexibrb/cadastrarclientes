@@ -65,13 +65,9 @@ def cadastrar():
                 data2 = pd.concat([data2, df2], ignore_index=True)
                 data2.to_csv('clientes.csv', index=False)
                 st.success("# Cadastro Efetuado com sucesso!!!!")
-                sleep(3)
                 st.table(tabclientes.tail(1))
+                sleep(3)
                 st.experimental_rerun()
-
-
-
-
 
     else:
         with st.form("config"):
