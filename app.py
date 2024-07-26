@@ -14,7 +14,7 @@ st.set_page_config(
 estilos()
 titulo()
 ###################### MENU PRINCIPAL #####################################
-menu_background_color = "#000000"  # Cor de fundo do menu
+'''menu_background_color = "#000000"  # Cor de fundo do menu
 menu_selected_color = "#ff0000"  # Cor do item selecionado
 menu_unselected_color = "#FFFFFF"  # Cor dos itens não selecionados
 menu_hover_color = "#262730"  # Cor dos itens não selecionados
@@ -29,14 +29,17 @@ selecao = option_menu(
         "icon": {"color": menu_unselected_color, "font-size": "20px"},
         "nav-link": {"font-size": "20px", "text-align": "center", "margin": "0px", "--hover-color": menu_hover_color},
         "nav-link-selected": {"background-color": menu_selected_color},
-    })
-
-if selecao == 'Cadastrar Dados':
+    })'''
+st.markdown('## Bem-vindo ao sistema, Faça seu cadastro')
+btn_cadastro = st.button('Cadastrar Dados')
+btn_visualizar = st.button('Visualizar Dados')
+btn_apagar = st.button('Apagar Dados')
+if btn_cadastro:
     cadastrar()
-elif selecao == 'Visualizar Dados':
+elif btn_visualizar:
     visualisar()
 
-elif selecao == 'Apagar Dados':
+elif btn_apagar :
     apagar()
 
 
