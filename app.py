@@ -1,6 +1,4 @@
 import os
-os.system('pip install -r requirements.txt')
-from streamlit_option_menu import option_menu
 from funcoes import *
 from paginas import *
 
