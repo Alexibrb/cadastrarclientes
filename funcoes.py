@@ -60,7 +60,7 @@ def estilos():
 
         }
 	.MainMenu {
-		visibility: Hidden;
+		visibility: hidden;
 
 	 }
        
