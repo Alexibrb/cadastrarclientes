@@ -23,7 +23,7 @@ st.markdown("""<style>
 		height: 50px;
 		width:200px;
         white-space: pre-wrap;
-		background-color: #0000ff; 
+		background-color: #2e5db7; 
 		border-radius: 15px 15px 0px 0px;
 		gap: 5px;
 		padding-top: 5px;
