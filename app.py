@@ -22,10 +22,10 @@ st.markdown("""<style>
 	.stTabs [data-baseweb="tab"] {
 		height: 50px;
 		width:200px;
-        	#white-space: pre-wrap;
+        	white-space: pre-wrap;
 		background-color: #2e5db7; 
 		border-radius: 10px 10px 0px 0px;
-		gap: 3px;
+		gap: 20px;
 		padding-top: 5px;
 		padding-bottom: 5px;
     }
