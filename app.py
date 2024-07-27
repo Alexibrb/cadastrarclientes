@@ -25,9 +25,9 @@ st.markdown("""<style>
         	white-space: pre-wrap;
 		background-color: #2e5db7; 
 		border-radius: 10px 10px 0px 0px;
-		gap: 20px;
-		padding-top: 5px;
-		padding-bottom: 5px;
+		gap: 3px;
+		padding-top: 50px;
+		padding-bottom: 50px;
     }
 
 	.stTabs [aria-selected="true"] {
