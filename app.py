@@ -15,7 +15,7 @@ cadastro = 'inativo'
 st.markdown("""<style>
 
 	.stTabs [data-baseweb="tab-list"] {
-		gap: 5px;
+		gap: 3px;
 		
     }
 
@@ -25,7 +25,7 @@ st.markdown("""<style>
         white-space: pre-wrap;
 		background-color: #2e5db7; 
 		border-radius: 10px 10px 0px 0px;
-		gap: 5px;
+		gap: 3px;
 		padding-top: 5px;
 		padding-bottom: 5px;
     }
