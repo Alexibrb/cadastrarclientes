@@ -59,7 +59,7 @@ def estilos():
             margin: 3px 3px;
 
         }
-	.MainMenu {
+	#MainMenu {
 		visibility: hidden;
 
 	 }
