@@ -10,18 +10,60 @@ st.set_page_config(
 )
 estilos()
 titulo()
+cadastro = 'inativo'
 
-st.markdown('## Bem-vindo ao sistema, Faça seu cadastro')
-btn_cadastro = st.button('Cadastrar Dados')
-btn_visualizar = st.button('Visualizar Dados')
-btn_apagar = st.button('Apagar Dados')
-if btn_cadastro:
+st.markdown("""<style>
+
+	.stTabs [data-baseweb="tab-list"] {
+		gap: 5px;
+		color:blue;
+    }
+
+	.stTabs [data-baseweb="tab"] {
+		height: 50px;
+		width:200px;
+        white-space: pre-wrap;
+		background-color: #0000ff; 
+		border-radius: 15px 15px 0px 0px;
+		gap: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+    }
+
+	.stTabs [aria-selected="true"] {
+  		background-color: white;
+  		
+  	
+	}
+
+</style>""", unsafe_allow_html=True)
+
+st.markdown('## Bem-vindo ao sistema\n ### Faça seu cadastro')
+
+tab1, tab2, tab3 = st.tabs(["   Cadastrar Dados   ", "Visualizar Dados", "Apagar Dados"])
+with tab1:
     cadastrar()
-elif btn_visualizar:
+with tab2:
     visualisar()
-
-elif btn_apagar :
+with tab3:
     apagar()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
