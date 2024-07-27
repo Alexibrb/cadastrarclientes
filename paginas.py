@@ -67,7 +67,7 @@ def cadastrar():
                 data2.to_csv('clientes.csv', index=False)
                 st.success("# Cadastro Efetuado com sucesso!!!!")
 
-                st.table(tabclientes.tail(1))
+                st.table(data2.tail(1))
                 #sleep(3)
                 #st.experimental_rerun()
 
