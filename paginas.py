@@ -68,8 +68,8 @@ def cadastrar():
                 st.success("# Cadastro Efetuado com sucesso!!!!")
 
                 st.table(tabclientes.tail(1))
-                sleep(3)
-                st.experimental_rerun()
+                #sleep(3)
+                #st.experimental_rerun()
 
 
 
@@ -140,8 +140,8 @@ def cadastrar():
                 data2.to_csv('clientes.csv', index=False)
                 st.success("# Cadastro Efetuado com sucesso!!!!")
                 st.table(data2)
-                sleep(3)
-                st.experimental_rerun()
+                #sleep(3)
+                #st.experimental_rerun()
 
 
 def visualisar():
