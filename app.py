@@ -31,7 +31,7 @@ st.markdown("""<style>
     }
 
 	.stTabs [aria-selected="true"] {
-  		background-color: white;
+  		background-color:black;
   		
   	
 	}
