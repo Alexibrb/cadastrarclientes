@@ -173,8 +173,8 @@ def apagar():
 
                 os.remove('clientes.csv')
                 st.success("### Dados Deletados com sucesso")
-                sleep(1)
-                st.experimental_rerun()
+                #sleep(1)
+                #st.experimental_rerun()
             else:
                 st.error("Senha errada")
 
