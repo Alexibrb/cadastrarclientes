@@ -16,7 +16,7 @@ st.markdown("""<style>
 
 	.stTabs [data-baseweb="tab-list"] {
 		gap: 5px;
-		color:blue;
+		
     }
 
 	.stTabs [data-baseweb="tab"] {
