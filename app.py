@@ -173,7 +173,22 @@ with tab1:
                 st.table(data2.tail(1))
 
 with tab2:
-    visualisar()
+     st.markdown("### 📢 :green[VISUALIZAR DADOS DO PROJETO]")
+    st.write(":blue[Somente Administradores podem ver os dados]")
+    if os.path.exists('clientes.csv'):
+        tabclientes = pd.read_csv('clientes.csv', sep=",")
+        senha = st.text_input("Digite a senha para visualizar os dados", type="password")
+        btn_visualizar = st.button("Visualizar")
+        if btn_visualizar:
+            if senha == "ki47trqwe":
+
+                st.table(tabclientes)
+
+            else:
+                st.error("Senha errada")
+    else:
+        st.warning("### Nenhum Registro Encontrado")
+	    
 with tab3:
     apagar()
 
