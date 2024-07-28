@@ -63,12 +63,12 @@ def estilos():
 		visibility: hidden;
 
 	 }
-  	footer {
+  	#footer {
 	
 	visibility: hidden;
 	
 	}
-	footer:after {
+	#footer:after {
 		content:'goodbye'; 
 		visibility: visible;
 		display: block;
