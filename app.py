@@ -179,7 +179,7 @@ with tab2:
     if os.path.exists('clientes.csv'):
         tabclientes = pd.read_csv('clientes.csv', sep=",")
         senha = st.text_input("Digite a senha para visualizar os dados", type="password")
-        btn_visualizar = st.button("Visualizar")
+        btn_visualizar = st.button("Visualizar Dados")
         if btn_visualizar:
             if senha == "ki47trqwe":
 
@@ -195,7 +195,7 @@ with tab3:
     st.write(":blue[Só Administradores podem apagar os dados]")
     if os.path.exists('clientes.csv'):
         senha2 = st.text_input("Digite a Senha para Apagar os dados", type="password")
-        btn_apagar = st.button("Apagar Dados dos Clientes", type="primary")
+        btn_apagar = st.button("Apagar Dados", type="primary")
         if btn_apagar:
             if senha2 == "ki47trqwe":
 
