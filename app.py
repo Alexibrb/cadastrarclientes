@@ -14,7 +14,7 @@ st.set_page_config(
 )
 estilos()
 titulo()
-cadastro = 'inativo'
+
 
 st.markdown("""<style>
 
@@ -105,8 +105,10 @@ with tab1:
                 st.success("# Cadastro Efetuado com sucesso!!!!")
 
                 st.table(data2.tail(1))
-                sleep(3)
-                st.experimental_rerun()
+		btn_confirmar = st.form_submit_button("Confirmar Dados")
+
+           	if btn_confirmar:   
+                	st.experimental_rerun()
 
 
 
@@ -176,9 +178,12 @@ with tab1:
                 data2 = pd.concat([data2, df2], ignore_index=True)
                 data2.to_csv('clientes.csv', index=False)
                 st.success("# Cadastro Efetuado com sucesso!!!!")
-                st.table(data2)
-                sleep(3)
-                st.experimental_rerun()
+                
+                st.table(data2.tail(1))
+		btn_confirmar2 = st.form_submit_button("Confirmar Dados")
+
+           	if btn_confirmar2:   
+                	st.experimental_rerun()
 with tab2:
     visualisar()
 with tab3:
