@@ -20,7 +20,7 @@ st.markdown("""<style>
 			.stTabs [aria-selected="true"] {background-color:#0c3181;}
  		</style>""", unsafe_allow_html=True)
 
-st.header('Bem-vindo ao sistema')
+st.header('Bem-vindo ao sistema  🤝')
 
 tab1, tab2, tab3 = st.tabs(["   Cadastrar Dados   ", "Visualizar Dados", "Apagar Dados"])
 ########################################### CADASTRAR DADOS ##############################################	 
