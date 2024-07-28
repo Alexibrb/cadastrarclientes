@@ -48,7 +48,7 @@ tab1, tab2, tab3 = st.tabs(["   Cadastrar Dados   ", "Visualizar Dados", "Apagar
 ########################################### CADASTRAR DADOS ##############################################	 
 with tab1:
     st.markdown("## 📢 :violet[FAÇA SEU CADASTRO]")
-    st.write(":blue[Por favor, preencha todos os dados]")
+    st.write(":red[Por favor, preencha todos os campos]")
     if os.path.exists('clientes.csv'):
         tabclientes = pd.read_csv('clientes.csv', sep=",")
 
@@ -175,7 +175,7 @@ with tab1:
 ########################################### VISUALIZAR DADOS ##############################################	 
 with tab2:
     st.markdown("### 📢 :green[VISUALIZAR DADOS]")
-    st.write(":blue[Somente Administradores podem ver os dados]")
+    st.write(":blue[Só Administradores podem ver os dados]")
     if os.path.exists('clientes.csv'):
         tabclientes = pd.read_csv('clientes.csv', sep=",")
         senha = st.text_input("Digite a senha para visualizar os dados", type="password")
@@ -192,7 +192,7 @@ with tab2:
 ########################################### APAGAR DADOS ##############################################	    
 with tab3:
     st.markdown("### 📢 :red[APAGAR DADOS]")
-    st.write(":blue[Somente Administradores podem apagar os dados]")
+    st.write(":blue[Só Administradores podem apagar os dados]")
     if os.path.exists('clientes.csv'):
         senha2 = st.text_input("Digite a Senha para Apagar os dados", type="password")
         btn_apagar = st.button("Apagar Dados dos Clientes", type="primary")
