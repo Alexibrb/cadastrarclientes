@@ -48,7 +48,7 @@ tab1, tab2, tab3 = st.tabs(["   Cadastrar Dados   ", "Visualizar Dados", "Apagar
 ########################################### CADASTRAR DADOS ##############################################	 
 with tab1:
     st.markdown("## 📢 :violet[FAÇA SEU CADASTRO]")
-    st.write(":red[Por favor, preencha todos os campos]")
+    st.write(":red[Por favor, preencha todos os campos]⤵️")
     if os.path.exists('clientes.csv'):
         tabclientes = pd.read_csv('clientes.csv', sep=",")
 
@@ -75,7 +75,7 @@ with tab1:
 
             # Desativando o botão se algum campo estiver vazio
             if not are_fields_filled(nome, telefone, rg, cpf, endereco_obra, endereco_resid):
-                warning_message.warning("Por favor, preencha todos os campos.")
+                warning_message.warning("Por favor, preencha todos os campos.⤴️")
             else:
                 warning_message.empty()
 
@@ -130,7 +130,7 @@ with tab1:
 
             # Desativando o botão se algum campo estiver vazio
             if not are_fields_filled(nome, telefone, rg, cpf, endereco_obra, endereco_resid):
-                warning_message.warning("Por favor, preencha todos os campos.")
+                warning_message.warning("Por favor, preencha todos os campos.⤴️")
             else:
                 warning_message.empty()
 
