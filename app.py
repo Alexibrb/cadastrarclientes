@@ -174,7 +174,7 @@ with tab1:
                 st.table(data2.tail(1))
 ########################################### VISUALIZAR DADOS ##############################################	 
 with tab2:
-     st.markdown("### 📢 :green[VISUALIZAR DADOS DO PROJETO]")
+    st.markdown("### 📢 :green[VISUALIZAR DADOS DO PROJETO]")
     st.write(":blue[Somente Administradores podem ver os dados]")
     if os.path.exists('clientes.csv'):
         tabclientes = pd.read_csv('clientes.csv', sep=",")
@@ -201,8 +201,7 @@ with tab3:
 
                 os.remove('clientes.csv')
                 st.success("### Dados Deletados com sucesso")
-                #sleep(1)
-                #st.experimental_rerun()
+                
             else:
                 st.error("Senha errada")
 
