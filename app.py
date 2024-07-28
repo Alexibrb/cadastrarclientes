@@ -48,7 +48,7 @@ tab1, tab2, tab3 = st.tabs(["   Cadastrar Dados   ", "Visualizar Dados", "Apagar
 ########################################### CADASTRAR DADOS ##############################################	 
 with tab1:
     st.markdown("## 📢 :violet[FAÇA SEU CADASTRO]")
-    st.warning(":red[Por favor, preencha todos os campos] ⤵️")
+    st.warning("Por favor, preencha todos os campos ⤵️")
     if os.path.exists('clientes.csv'):
         tabclientes = pd.read_csv('clientes.csv', sep=",")
 
