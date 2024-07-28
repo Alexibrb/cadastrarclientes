@@ -42,7 +42,7 @@ st.markdown("""<style>
 
 </style>""", unsafe_allow_html=True)
 
-st.markdown('## Bem-vindo ao sistema\n ### Faça seu cadastro')
+st.markdown('## Bem-vindo ao sistema\n ### :blue[Faça seu cadastro]')
 
 tab1, tab2, tab3 = st.tabs(["   Cadastrar Dados   ", "Visualizar Dados", "Apagar Dados"])
 with tab1:
@@ -106,10 +106,10 @@ with tab1:
 
                 st.table(data2.tail(1))
 		    
-	btn_confirmar = st.button("Confirmar Dados")
+		btn_confirmar = st.button("Confirmar Dados")
 	
-	if btn_confirmar:   
-		st.experimental_rerun()
+		if btn_confirmar:   
+			st.experimental_rerun()
 
 
 
@@ -181,10 +181,10 @@ with tab1:
                 st.success("# Cadastro Efetuado com sucesso!!!!")
                 
                 st.table(data2.tail(1))
-	btn_confirmar2 = st.button("Confirmar Dados")
+		btn_confirmar2 = st.button("Confirmar Dados")
 	
-	if btn_confirmar2:   
-		st.experimental_rerun()
+		if btn_confirmar2:   
+			st.experimental_rerun()
 with tab2:
     visualisar()
 with tab3:
