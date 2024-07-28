@@ -174,7 +174,7 @@ with tab1:
                 st.table(data2.tail(1))
 ########################################### VISUALIZAR DADOS ##############################################	 
 with tab2:
-    st.markdown("### 📢 :green[VISUALIZAR DADOS DO PROJETO]")
+    st.markdown("### 📢 :green[VISUALIZAR DADOS]")
     st.write(":blue[Somente Administradores podem ver os dados]")
     if os.path.exists('clientes.csv'):
         tabclientes = pd.read_csv('clientes.csv', sep=",")
@@ -191,7 +191,7 @@ with tab2:
         st.warning("### Nenhum Registro Encontrado")
 ########################################### APAGAR DADOS ##############################################	    
 with tab3:
-    st.markdown("### 📢 :red[APAGAR DADOS DO PROJETO]")
+    st.markdown("### 📢 :red[APAGAR DADOS]")
     st.write(":blue[Somente Administradores podem apagar os dados]")
     if os.path.exists('clientes.csv'):
         senha2 = st.text_input("Digite a Senha para Apagar os dados", type="password")
