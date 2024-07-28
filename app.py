@@ -14,46 +14,13 @@ st.set_page_config(
 )
 estilos()
 titulo()
-html_string='''
-<script>
-// To break out of iframe and access the parent window
-const streamlitDoc = window.parent.document;
-
-// Make the replacement
-document.addEventListener("DOMContentLoaded", function(event){
-        streamlitDoc.getElementsByTagName("footer")[0].innerHTML = "Provided by <a href='https://yourwebsite.com' target='_blank' class='css-z3au9t egzxvld2'>Your Link Display Text Here</a>";
-    });
-</script>
-'''
-components.html(html_string)
-
 st.markdown("""<style>
+			.stTabs [data-baseweb="tab-list"] {gap: 3px;}
+			.stTabs [data-baseweb="tab"] {height: 40px; width:200px; white-space: pre-wrap; background-color: #2e5db7;  border-radius:15px 15px 0px 0px; gap: 3px; padding-top: 5px; padding-bottom: 5px;}
+			.stTabs [aria-selected="true"] {background-color:#0c3181;}
+ 		</style>""", unsafe_allow_html=True)
 
-	.stTabs [data-baseweb="tab-list"] {
-		gap: 3px;
-		
-    }
-
-	.stTabs [data-baseweb="tab"] {
-		height: 40px;
-		width:200px;
-        	white-space: pre-wrap;
-		background-color: #2e5db7; 
-		border-radius:15px 15px 0px 0px;
-		gap: 3px;
-		padding-top: 5px;
-		padding-bottom: 5px;
-    }
-
-	.stTabs [aria-selected="true"] {
-  		background-color:#0c3181;
-  		
-  	
-	}
-
-</style>""", unsafe_allow_html=True)
-
-st.markdown('## Bem-vindo ao sistema')
+st.header('## Bem-vindo ao sistema')
 
 tab1, tab2, tab3 = st.tabs(["   Cadastrar Dados   ", "Visualizar Dados", "Apagar Dados"])
 ########################################### CADASTRAR DADOS ##############################################	 
