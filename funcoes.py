@@ -63,6 +63,14 @@ def estilos():
 		visibility: hidden;
 
 	 }
+  	#footer {
+		visibility: hidden;
+
+	 }
+  	#header {
+		visibility: hidden;
+
+	 }
        
 
 	
