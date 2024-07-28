@@ -105,11 +105,11 @@ with tab1:
                 st.success("# Cadastro Efetuado com sucesso!!!!")
 
                 st.table(data2.tail(1))
-		    
-		btn_confirmar = st.button("Confirmar Dados")
-	
-		if btn_confirmar:   
-			st.experimental_rerun()
+	    btn_confirmar = st.button("Confirmar Dados")
+
+            	
+	    if btn_confirmar:   
+		st.experimental_rerun()
 
 
 
@@ -181,10 +181,11 @@ with tab1:
                 st.success("# Cadastro Efetuado com sucesso!!!!")
                 
                 st.table(data2.tail(1))
-		btn_confirmar2 = st.button("Confirmar Dados")
-	
-		if btn_confirmar2:   
-			st.experimental_rerun()
+	    btn_confirmar = st.button("Confirmar Dados")
+
+            	
+	    if btn_confirmar:   
+		st.experimental_rerun()
 with tab2:
     visualisar()
 with tab3:
