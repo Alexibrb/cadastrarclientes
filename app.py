@@ -42,12 +42,12 @@ st.markdown("""<style>
 
 </style>""", unsafe_allow_html=True)
 
-st.markdown('## Bem-vindo ao sistema\n ### :blue[Faça seu cadastro]')
+st.markdown('## Bem-vindo ao sistema')
 
 tab1, tab2, tab3 = st.tabs(["   Cadastrar Dados   ", "Visualizar Dados", "Apagar Dados"])
 ########################################### CADASTRAR DADOS ##############################################	 
 with tab1:
-    st.markdown("### 📢 :violet[CADASTRAR INFORMAÇÕES DO PROJETO]")
+    st.markdown("### 📢 ### :blue[Faça seu cadastro]")
     st.write(":blue[Por favor, preencha todos os dados]")
     if os.path.exists('clientes.csv'):
         tabclientes = pd.read_csv('clientes.csv', sep=",")
