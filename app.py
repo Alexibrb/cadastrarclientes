@@ -83,8 +83,8 @@ with tab1:
                 st.success("# Cadastro Efetuado com sucesso!!!!")
 
                 st.table(tabclientes.tail(1))
-                placeholder.empty()  # Limpa o conteúdo anterior
-    		update_content()  # Atualiza o conteúdo
+		placeholder.empty()  # Limpa o conteúdo anterior
+		update_content()  # Atualiza o conteúdo
 
     else:
 
