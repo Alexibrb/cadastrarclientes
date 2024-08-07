@@ -87,7 +87,7 @@ with tab1:
                 st.empty()  # Limpa o conteúdo anterior
                 update_content()  # Atualiza o conteúdo
             else:
-                placeholder.empty()
+                st.empty()
 
     else:
 
@@ -155,10 +155,10 @@ with tab1:
                 st.table(data2)
                 sleep(10)
             if st.form_submit_button("Recarregar"):
-                placeholder.empty()  # Limpa o conteúdo anterior
+                st.empty()  # Limpa o conteúdo anterior
                 update_content()  # Atualiza o conteúdo
             else:
-                st.write("Clique no botão para recarregar a página.")
+                st.empty() 
 ########################################### VISUALIZAR DADOS ##############################################	 
 with tab2:
     st.markdown("### 📢 :green[VISUALIZAR DADOS]")
