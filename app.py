@@ -14,6 +14,9 @@ st.set_page_config(
 )
 estilos()
 titulo()
+
+# Espaço reservado para o conteúdo dinâmico
+placeholder = st.empty()
 st.markdown("""<style>
 			.stTabs [data-baseweb="tab-list"] {gap: 3px;}
 			.stTabs [data-baseweb="tab"] {height: 40px; width:200px; white-space: pre-wrap; background-color: #2e5db7;  border-radius:15px 15px 0px 0px; gap: 3px; padding-top: 5px; padding-bottom: 5px;}
