@@ -82,7 +82,7 @@ with tab1:
                 data2 = pd.concat([data2, df2], ignore_index=True)
                 data2.to_csv('clientes.csv', index=False)
                 st.success("# Cadastro Efetuado com sucesso!!!!")
-
+		st.experimental_rerun()
                 st.table(data2.tail(1))
     else:
 
@@ -148,7 +148,7 @@ with tab1:
                 data2 = pd.concat([data2, df2], ignore_index=True)
                 data2.to_csv('clientes.csv', index=False)
                 st.success("# Cadastro Efetuado com sucesso!!!!")
-                
+                st.experimental_rerun()
                 st.table(data2.tail(1))
 ########################################### VISUALIZAR DADOS ##############################################	 
 with tab2:
@@ -179,6 +179,9 @@ with tab3:
 
                 os.remove('clientes.csv')
                 st.success("### Dados Deletados com sucesso")
+		sleep(2)    
+		st.experimental_rerun()
+		
                 
             else:
                 st.error("Senha errada")
