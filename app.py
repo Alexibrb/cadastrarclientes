@@ -84,10 +84,11 @@ with tab1:
 
                 st.table(tabclientes.tail(1))
 		if st.button("Recarregar"):
-    			placeholder.empty()  # Limpa o conteúdo anterior
-    			update_content()  # Atualiza o conteúdo
-		else:
-    			st.write("Clique no botão para recarregar a página.")
+                if st.button("Recarregar"):
+                    placeholder.empty()  # Limpa o conteúdo anterior
+                    update_content()  # Atualiza o conteúdo
+                else:
+                    st.write("Clique no botão para recarregar a página.")
 
     else:
 
