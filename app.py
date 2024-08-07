@@ -83,11 +83,7 @@ with tab1:
                 st.success("# Cadastro Efetuado com sucesso!!!!")
 
                 st.table(tabclientes.tail(1))
-            if st.form_submit_button("Atualizar Página"):
-                st.empty().empty()  # Limpa o conteúdo anterior
-                update_content()  # Atualiza o conteúdo
-            else:
-                st.empty().empty()
+
 
     else:
 
@@ -154,11 +150,7 @@ with tab1:
                 st.success("# Cadastro Efetuado com sucesso!!!!")
                 st.table(data2)
                 sleep(10)
-            if st.form_submit_button("Recarregar"):
-                st.empty().empty  # Limpa o conteúdo anterior
-                update_content()  # Atualiza o conteúdo
-            else:
-                st.empty().empty
+
 ########################################### VISUALIZAR DADOS ##############################################	 
 with tab2:
     st.markdown("### 📢 :green[VISUALIZAR DADOS]")
