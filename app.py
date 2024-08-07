@@ -86,7 +86,7 @@ with tab1:
                 sleep(10)
                 st.experimental_rerun()
     
-        else:
+    else:
     
         with st.form("config", clear_on_submit=True):
             cidade = st.selectbox(label="Selecione a sua Cidade:", options=[
