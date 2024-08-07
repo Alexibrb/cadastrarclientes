@@ -84,7 +84,7 @@ with tab1:
 
                 st.table(tabclientes.tail(1))
             if st.form_submit_button("Atualizar Página"):
-                placeholder.empty()  # Limpa o conteúdo anterior
+                st.empty()  # Limpa o conteúdo anterior
                 update_content()  # Atualiza o conteúdo
             else:
                 placeholder.empty()
