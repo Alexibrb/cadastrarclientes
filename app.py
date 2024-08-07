@@ -78,9 +78,9 @@ with tab1:
                      "Endereço_Residencial": end2,
                      "Observação": obs1
                      }
-        	df2 = pd.DataFrame(d, index=[0])
-        	data2 = pd.concat([data2, df2], ignore_index=True)
-        	data2.to_csv('clientes.csv', index=False)
+		df2 = pd.DataFrame(d, index=[0])
+		data2 = pd.concat([data2, df2], ignore_index=True)
+		data2.to_csv('clientes.csv', index=False)
 		#placeholder.empty()  # Limpa o conteúdo anterior
 		#update_content()  # Atualiza o conteúdo
         	st.table(data2.tail(1))
