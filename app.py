@@ -83,8 +83,8 @@ with tab1:
                 st.success("# Cadastro Efetuado com sucesso!!!!")
 
                 st.table(tabclientes.tail(1))
-                sleep(10)
-                st.experimental_rerun()
+                placeholder.empty()  # Limpa o conteúdo anterior
+    		update_content()  # Atualiza o conteúdo
 
     else:
 
@@ -151,7 +151,8 @@ with tab1:
                 st.success("# Cadastro Efetuado com sucesso!!!!")
                 st.table(data2)
                 sleep(10)
-                st.experimental_rerun()
+                placeholder.empty()  # Limpa o conteúdo anterior
+    		update_content()  # Atualiza o conteúdo
 ########################################### VISUALIZAR DADOS ##############################################	 
 with tab2:
     st.markdown("### 📢 :green[VISUALIZAR DADOS]")
@@ -197,6 +198,9 @@ with tab3:
             if senha2 == "ki47trqwe":
                 os.remove('clientes.csv')
                 st.success("### Dados Deletados com sucesso")
+		placeholder.empty()  # Limpa o conteúdo anterior
+    		update_content()  # Atualiza o conteúdo
+		    
 
         else:
             st.error("Senha errada")
