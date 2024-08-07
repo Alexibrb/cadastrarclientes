@@ -10,7 +10,7 @@ def titulo():
     st.write("---")
 
 def update_content():
-    st.success("Dados Cadastrados com sucesso.")
+    st.empty().empty()
 
 def estilos():
     st.markdown("""
