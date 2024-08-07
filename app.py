@@ -204,11 +204,7 @@ with tab3:
             if senha2 == "ki47trqwe":
                 os.remove('clientes.csv')
                 st.success("### Dados Deletados com sucesso")
-            if st.form_submit_button("Recarregar"):
-                placeholder.empty()  # Limpa o conteúdo anterior
-                update_content()  # Atualiza o conteúdo
-            else:
-                st.write("Clique no botão para recarregar a página.")
+
 		    
 
         else:
