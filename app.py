@@ -154,8 +154,11 @@ with tab1:
                 st.success("# Cadastro Efetuado com sucesso!!!!")
                 st.table(data2)
                 sleep(10)
+            if st.button("Recarregar"):
                 placeholder.empty()  # Limpa o conteúdo anterior
-    		update_content()  # Atualiza o conteúdo
+                update_content()  # Atualiza o conteúdo
+            else:
+                st.write("Clique no botão para recarregar a página.")
 ########################################### VISUALIZAR DADOS ##############################################	 
 with tab2:
     st.markdown("### 📢 :green[VISUALIZAR DADOS]")
