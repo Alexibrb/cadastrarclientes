@@ -204,9 +204,7 @@ with tab3:
             if senha2 == "ki47trqwe":
                 os.remove('clientes.csv')
                 st.success("### Dados Deletados com sucesso")
-
-		    
-
+  
         else:
             st.error("Senha errada")
 
