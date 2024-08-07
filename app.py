@@ -53,7 +53,7 @@ with tab1:
 		# Desativando o botão se algum campo estiver vazio
 		if not are_fields_filled(nome, telefone, rg, cpf, endereco_obra, endereco_resid):
 			warning_message.warning("Por favor, preencha todos os campos. ⤴️")
-		 else:
+		else:
 			warning_message.empty()
 
 		btn_cadastro = st.form_submit_button("Cadastrar Dados")
