@@ -49,15 +49,15 @@ with tab1:
             obs = st.text_area("Observação", placeholder="não obrigatório")
             # Mensagem de aviso
             warning_message = st.empty()
-    
+
             # Desativando o botão se algum campo estiver vazio
             if not are_fields_filled(nome, telefone, rg, cpf, endereco_obra, endereco_resid):
                 warning_message.warning("Por favor, preencha todos os campos.")
             else:
                 warning_message.empty()
-    
+
             btn_cadastro = st.form_submit_button("Cadastrar Dados")
-    
+
             if btn_cadastro and are_fields_filled(nome, telefone, rg, cpf, endereco_obra, endereco_resid):
                 cidadec = cidade
                 cliente = nome
@@ -81,13 +81,13 @@ with tab1:
                 data2 = pd.concat([data2, df2], ignore_index=True)
                 data2.to_csv('clientes.csv', index=False)
                 st.success("# Cadastro Efetuado com sucesso!!!!")
-    
+
                 st.table(tabclientes.tail(1))
                 sleep(10)
                 st.experimental_rerun()
-    
+
     else:
-    
+
         with st.form("config", clear_on_submit=True):
             cidade = st.selectbox(label="Selecione a sua Cidade:", options=[
                 "Clique aqui",
@@ -107,15 +107,15 @@ with tab1:
             obs = st.text_area("Observação", placeholder="não obrigatório")
             # Mensagem de aviso
             warning_message = st.empty()
-    
+
             # Desativando o botão se algum campo estiver vazio
             if not are_fields_filled(nome, telefone, rg, cpf, endereco_obra, endereco_resid):
                 warning_message.warning("Por favor, preencha todos os campos.")
             else:
                 warning_message.empty()
-    
+
             btn_cadastro = st.form_submit_button("Cadastrar Dados")
-    
+
             if btn_cadastro and are_fields_filled(nome, telefone, rg, cpf, endereco_obra, endereco_resid):
                 cidadec = cidade
                 cliente = nome
@@ -125,7 +125,7 @@ with tab1:
                 end1 = endereco_obra
                 end2 = endereco_resid
                 obs1 = obs
-    
+
                 data2 = pd.DataFrame(columns=['Cidade',
                                               'Nome',
                                               'Telefone',
@@ -144,7 +144,7 @@ with tab1:
                      "Endereço_Residencial": end2,
                      "Observação": obs1
                      }
-    
+
                 df2 = pd.DataFrame(d, index=[0])
                 data2 = pd.concat([data2, df2], ignore_index=True)
                 data2.to_csv('clientes.csv', index=False)
