@@ -86,6 +86,7 @@ with tab1:
                 st.success("# Cadastro Efetuado com sucesso!!!!")
 
                 st.table(tabclientes.tail(1))
+		sleep(3)
             if st.form_submit_button("Recarregar"):
                 placeholder.empty()  # Limpa o conteúdo anterior
                 update_content()  # Atualiza o conteúdo
@@ -157,6 +158,7 @@ with tab1:
                 data2.to_csv('clientes.csv', index=False)
                 st.success("# Cadastro Efetuado com sucesso!!!!")
                 st.table(data2)
+		sleep(3)
             if st.form_submit_button("Recarregar"):
                 placeholder.empty()  # Limpa o conteúdo anterior
                 update_content()  # Atualiza o conteúdo
