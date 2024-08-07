@@ -83,6 +83,11 @@ with tab1:
                 st.success("# Cadastro Efetuado com sucesso!!!!")
 
                 st.table(tabclientes.tail(1))
+            if st.form_submit_button("Recarregar"):
+                placeholder.empty()  # Limpa o conteúdo anterior
+                update_content()  # Atualiza o conteúdo
+            else:
+                st.empty()
 
 
     else:
@@ -149,12 +154,11 @@ with tab1:
                 data2.to_csv('clientes.csv', index=False)
                 st.success("# Cadastro Efetuado com sucesso!!!!")
                 st.table(data2)
-	if st.form_submit_button("Atualizar Página"):
-        	st.empty().empty()  # Limpa o conteúdo anterior
+            if st.form_submit_button("Recarregar"):
+                placeholder.empty()  # Limpa o conteúdo anterior
                 update_content()  # Atualiza o conteúdo
-        else:
-                st.empty().empty()
-                sleep(10)
+            else:
+                st.empty()
 
 	 
 
