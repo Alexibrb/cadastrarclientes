@@ -154,7 +154,7 @@ with tab1:
                 st.success("# Cadastro Efetuado com sucesso!!!!")
                 st.table(data2)
                 sleep(10)
-            if st.form_submit_button("Recarregar.."):
+            if st.form_submit_button("Recarregar"):
                 placeholder.empty()  # Limpa o conteúdo anterior
                 update_content()  # Atualiza o conteúdo
             else:
@@ -204,7 +204,7 @@ with tab3:
             if senha2 == "ki47trqwe":
                 os.remove('clientes.csv')
                 st.success("### Dados Deletados com sucesso")
-            if st.form_submit_button("Recarregar..."):
+            if st.form_submit_button("Recarregar"):
                 placeholder.empty()  # Limpa o conteúdo anterior
                 update_content()  # Atualiza o conteúdo
             else:
