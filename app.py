@@ -25,11 +25,10 @@ st.header('Bem-vindo ao sistema  🤝')
 tab1, tab2, tab3 = st.tabs(["   Cadastrar Dados   ", "Visualizar Dados", "Apagar Dados"])
 ########################################### CADASTRAR DADOS ##############################################	 
 with tab1:
-    st.markdown("## 📢 :violet[FAÇA SEU CADASTRO]")
-    st.warning("Por favor, preencha todos os campos ⤵️")
-    if os.path.exists('clientes.csv'):
+	st.markdown("## 📢 :violet[FAÇA SEU CADASTRO]")
+	st.warning("Por favor, preencha todos os campos ⤵️")
+	if os.path.exists('clientes.csv'):
         tabclientes = pd.read_csv('clientes.csv', sep=",")
-
 
 	with st.form("configp", clear_on_submit=True):
 		cidade = st.selectbox(label="Selecione a sua Cidade:", options=[
