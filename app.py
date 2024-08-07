@@ -149,25 +149,15 @@ with tab1:
                 data2.to_csv('clientes.csv', index=False)
                 st.success("# Cadastro Efetuado com sucesso!!!!")
                 st.table(data2)
+	if st.form_submit_button("Atualizar Página"):
+        	st.empty().empty()  # Limpa o conteúdo anterior
+                update_content()  # Atualiza o conteúdo
+        else:
+                st.empty().empty()
                 sleep(10)
 
-########################################### VISUALIZAR DADOS ##############################################	 
-with tab2:
-    st.markdown("### 📢 :green[VISUALIZAR DADOS]")
-    st.write(":blue[Só Administradores podem ver os dados]")
-    if os.path.exists('clientes.csv'):
-        tabclientes = pd.read_csv('clientes.csv', sep=",")
-        senha = st.text_input("Digite a senha para visualizar os dados", type="password")
-        btn_visualizar = st.button("Visualizar Dados")
-        if btn_visualizar:
-            if senha == "ki47trqwe":
+	 
 
-                st.table(tabclientes)
-
-            else:
-                st.error("Senha errada")
-    else:
-        st.warning("### Nenhum Registro Encontrado")
 ########################################### VISUALIZAR DADOS ##############################################
 with tab2:
     st.markdown("### 📢 :green[VISUALIZAR DADOS]")
