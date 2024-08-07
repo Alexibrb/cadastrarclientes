@@ -9,6 +9,8 @@ def titulo():
     st.success("# Paulo Eiji Viana \n  Engenheiro Civil - :blue[CREABA 37645/D] | Fone: :blue[(77) 98813-3951] \n\n Rua São Lucas, 323 - Bairro São Vicente - Condeúba-BA")
     st.write("---")
 
+def update_content():
+    st.success("Dados Cadastrados com sucesso.")
 
 def estilos():
     st.markdown("""
