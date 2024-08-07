@@ -169,45 +169,37 @@ with tab2:
 			st.error("Senha errada")
 	else:
 		st.warning("### Nenhum Registro Encontrado")
-########################################### APAGAR DADOS ##############################################	    
+########################################### VISUALIZAR DADOS ##############################################
+with tab2:
+    st.markdown("### 📢 :green[VISUALIZAR DADOS]")
+    st.write(":blue[Só Administradores podem ver os dados]")
+    if os.path.exists('clientes.csv'):
+        tabclientes = pd.read_csv('clientes.csv', sep=",")
+        senha = st.text_input("Digite a senha para visualizar os dados", type="password")
+        btn_visualizar = st.button("Visualizar Dados")
+        if btn_visualizar:
+            if senha == "ki47trqwe":
+
+                st.table(tabclientes)
+
+            else:
+                st.error("Senha errada")
+    else:
+        st.warning("### Nenhum Registro Encontrado")
+########################################### APAGAR DADOS ##############################################
 with tab3:
-	st.markdown("### 📢 :red[APAGAR DADOS]")
-    	st.write(":blue[Só Administradores podem apagar os dados]")
-    	if os.path.exists('clientes.csv'):
-		senha2 = st.text_input("Digite a Senha para Apagar os dados", type="password")
-		btn_apagar = st.button("Apagar Dados", type="primary")
-		if btn_apagar:
-	    		if senha2 == "ki47trqwe":
+    st.markdown("### 📢 :red[APAGAR DADOS]")
+    st.write(":blue[Só Administradores podem apagar os dados]")
+    if os.path.exists('clientes.csv'):
+        senha2 = st.text_input("Digite a Senha para Apagar os dados", type="password")
+        btn_apagar = st.button("Apagar Dados", type="primary")
+        if btn_apagar:
+            if senha2 == "ki47trqwe":
+                os.remove('clientes.csv')
+                st.success("### Dados Deletados com sucesso")
 
-				os.remove('clientes.csv')
-				st.success("### Dados Deletados com sucesso")
-		
-	    	else:
-			st.error("Senha errada")
+        else:
+            st.error("Senha errada")
 
-    	else:
-		st.warning("### Nenhum Registro Encontrado")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    else:
+        st.warning("### Nenhum Registro Encontrado")
