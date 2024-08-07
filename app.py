@@ -83,11 +83,11 @@ with tab1:
                 st.success("# Cadastro Efetuado com sucesso!!!!")
 
                 st.table(tabclientes.tail(1))
-		if st.form_submit_button("Recarregar."):
-			placeholder.empty()  # Limpa o conteúdo anterior
-			update_content()  # Atualiza o conteúdo
-		else:
-			st.write("Clique no botão para recarregar a página.")
+            if st.form_submit_button("Recarregar"):
+                placeholder.empty()  # Limpa o conteúdo anterior
+                update_content()  # Atualiza o conteúdo
+            else:
+                st.write("Clique no botão para recarregar a página.")
 
     else:
 
